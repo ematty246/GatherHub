@@ -1,4 +1,5 @@
 Project Title: AI-Based Smart Water Monitoring & Reporting System
+
 📌 Project Description
 Water-related issues such as flooding, water pollution, drainage blockages, and pipe bursts are common in urban and rural areas. However, these problems often go unreported or take too long to be addressed due to a lack of an efficient reporting system.
 
