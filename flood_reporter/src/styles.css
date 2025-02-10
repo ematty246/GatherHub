@@ -1,0 +1,259 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw; 
+  background-image: url('assets/background.jpg');
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw; 
+  background-image: url('assets/background.jpg');
+  background-size: 100vw 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.no-reports-box {
+  background: rgba(255, 255, 255, 0.5); 
+  color: black; 
+  padding: 15px 20px; 
+  border-radius: 10px; 
+  text-align: center; 
+  font-size: 16px; 
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  width: fit-content; 
+  margin: auto; 
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  text-align: center;
+  padding: 15px 0;
+}
+
+.dashboard-title, .user-type {
+  color: white; 
+  margin: 5px 0;
+}
+
+.scroll-container {
+  margin-top: 100px; 
+  width: 90%;
+  height: 70vh; 
+  overflow-y: auto; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+
+.department-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(5px); 
+}
+
+.department-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.department-card h3 {
+  margin-bottom: 10px;
+}
+
+.department-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+.auth-box {
+  background: #f8f9fa;
+  padding: 50px;
+  border-radius: 8px;
+  text-align: center;
+  width: 450px;
+  margin: auto; 
+}
+
+.auth-box input {
+  display: block;
+  width: 100%; 
+  padding: 12px; 
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.login-btn,
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 6px; 
+}
+
+p span {
+  color: #007bff;
+  cursor: pointer;
+}
+.reports-container {
+  width: 100%;
+  text-align: left; 
+  padding-left: 10px; 
+}
+
+
+.reports-container h2 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+
+.reports-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; 
+  justify-content: flex-start; 
+}
+
+
+.report-card {
+  width: 250px; 
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9); 
+  color: white;
+  border-radius: 8px;
+  padding: 8px; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+  transform: scale(1.03);
+}
+
+
+.report-image-container {
+  width: 100%;
+  height: 120px; 
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.report-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.report-details {
+  margin-top: 5px; 
+  text-align: left;
+  font-size: 14px;
+}
+
+.report-username {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px; 
+}
+
+@media screen and (max-width: 768px) {
+  .auth-box {
+    width: 85%; 
+    padding: 20px;
+    max-width: 350px; 
+  }
+
+  .auth-box input {
+    padding: 8px; 
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+  }
+
+  .scroll-container {
+    width: 95%; 
+    height: 60vh; 
+  }
+
+  .department-card {
+    padding: 15px;
+  }
+
+  .department-card img {
+    max-width: 80px; 
+  }
+
+  .reports-container {
+    padding-left: 5px;
+  }
+
+  .reports-grid {
+    justify-content: center; 
+  }
+
+  .report-card {
+    width: 90%; 
+  }
+
+  .report-image-container {
+    height: 100px; 
+  }
+
+  .app-container, .container {
+    background-size: cover; 
+  }
+
+  .header {
+    padding: 10px 0; 
+  }
+
+  .dashboard-title, .user-type {
+    font-size: 16px; 
+  }
+}

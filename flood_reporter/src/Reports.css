@@ -1,0 +1,83 @@
+.app-container {
+    display: flex;
+    flex-direction: column;/* Align everything to the left */
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('assets/background.jpg'); /* Set background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+  p {
+    margin-top: 6px; /* Reduced space */
+  }
+  
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+ /* Reports section */
+.reports-container {
+    width: 100%;
+    text-align: left; /* Align everything to the left */
+    padding-left: 10px; /* Adjusted padding */
+  }
+  
+  /* Adjust heading - Move to the left */
+  .reports-container h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 8px; /* Reduced space */
+  }
+  
+  /* Display reports in a horizontal grid and wrap to the next line */
+  .reports-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Reduced space between cards */
+    justify-content: flex-start; /* Align reports to the left */
+  }
+  
+  /* Medium-sized rectangular report cards */
+  .report-card {
+    width: 250px; /* Adjusted width */
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: white;
+    border-radius: 8px;
+    padding: 8px; /* Reduced padding */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .report-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Image styling */
+  .report-image-container {
+    width: 100%;
+    height: 120px; /* Slightly reduced height */
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .report-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Report details */
+  .report-details {
+    margin-top: 5px; /* Reduced space */
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .report-username {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px; /* Reduced space */
+  }
