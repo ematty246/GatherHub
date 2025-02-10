@@ -13,19 +13,19 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.root_path, 'data.db')
 app.config['SQLALCHEMY_BINDS'] = {
-    'default': 'mysql://root:Manu%402006@localhost/flood_reporter',
-    'sdma': 'mysql://root:Manu%402006@localhost/sdma',
-    'cgwb': 'mysql://root:Manu%402006@localhost/cgwb',
-    'cwc': 'mysql://root:Manu%402006@localhost/cwc',
-    'fire_services': 'mysql://root:Manu%402006@localhost/fire_services',
-    'imd': 'mysql://root:Manu%402006@localhost/imd',
-    'indian_army': 'mysql://root:Manu%402006@localhost/indian_army',
-    'indian_navy': 'mysql://root:Manu%402006@localhost/indian_navy',
-    'ministry_of_jalshakti': 'mysql://root:Manu%402006@localhost/ministry_of_jalshakti',
-    'ndma': 'mysql://root:Manu%402006@localhost/ndma',
-    'ndrf': 'mysql://root:Manu%402006@localhost/ndrf',
-    'nsra': 'mysql://root:Manu%402006@localhost/nsra',
-    'nwda': 'mysql://root:Manu%402006@localhost/nwda',
+    'default': 'mysql://root:your-password@localhost/flood_reporter',
+    'sdma': 'mysql://root:your-password@localhost/sdma',
+    'cgwb': 'mysql://root:your-password@localhost/cgwb',
+    'cwc': 'mysql://root:your-password@localhost/cwc',
+    'fire_services': 'mysql://root:your-password@localhost/fire_services',
+    'imd': 'mysql://root:your-password@localhost/imd',
+    'indian_army': 'mysql://root:your-password@localhost/indian_army',
+    'indian_navy': 'mysql://root:your-password@localhost/indian_navy',
+    'ministry_of_jalshakti': 'mysql://root:your-password@localhost/ministry_of_jalshakti',
+    'ndma': 'mysql://root:your-password@localhost/ndma',
+    'ndrf': 'mysql://root:your-password@localhost/ndrf',
+    'nsra': 'mysql://root:your-password@localhost/nsra',
+    'nwda': 'mysql://root:your-password@localhost/nwda',
 }  
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -488,8 +488,8 @@ def get_volunteer_names():
     names = [volunteer["full_name"] for volunteer in volunteers]
     return jsonify({"volunteer_names": names}), 200
 
-OPENWEATHER_API_KEY = "0c8fb6ec6498bacdba8143d3553b2561"
-GEMINI_API_KEY = "AIzaSyBoX9bHUASoIB-EmElOZg7DaBvnwAJHnOY"
+OPENWEATHER_API_KEY = "YOUR-API-KEY"
+GEMINI_API_KEY = "YOUR-API-KEY"
 
 def get_city_name(lat, lon):
     """Get city name using OpenStreetMap Nominatim Reverse Geocoding"""
