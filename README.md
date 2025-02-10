@@ -6,6 +6,7 @@ Water-related issues such as flooding, water pollution, drainage blockages, and 
 This project, AI-Based Smart Water Monitoring & Reporting System, is a mobile application built using Flutter that allows users to report water-related issues in real-time. The app uses OpenStreetMap for location tracking, AI for image analysis, and a volunteer system to engage the community in water conservation and disaster response.
 
 This system aims to:
+
 ✅ Enable citizens to report water-related problems quickly
 
 ✅ Help authorities respond to issues faster
