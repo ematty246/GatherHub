@@ -9,7 +9,7 @@ const cors = require('cors');
 app.use(cors());
 
 // 🔥 Your Gemini API Key
-const API_KEY = 'AIzaSyBoX9bHUASoIB-EmElOZg7DaBvnwAJHnOY';
+const API_KEY = 'GEMINI-API-KEY';
 
 // Middleware for handling file uploads
 app.use(fileUpload());
