@@ -1,0 +1,9 @@
+# Ignore Flutter, React, Node.js dependencies
+water_reporter/build/
+flood_reporter/node_modules/
+backend/node_modules/
+node/node_modules/
+*.log
+.env
+build/
+dist/
